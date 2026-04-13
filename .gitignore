@@ -1,0 +1,49 @@
+# ── Sensitive Client Data ──────────────────────────────────────────────────────
+# Raw and processed images contain handwritten payment records with real client names
+Pre-Processing/Original_Images/
+Pre-Processing/Gray_Scale/
+Pre-Processing/Seperated Tables/
+
+# Extracted cell crops (derived from client tables)
+Cells/
+
+# Training images are named after real clients
+Training_Data/name_training/
+Training_Data/date_training/
+Training_Data/number_training/
+
+# Generated CSVs from training image filenames — contain client names
+Training_Data/name_data.csv
+Training_Data/date_data.csv
+Training_Data/number_data.csv
+
+# Batch JSON files and compiled CSVs — contain real client payment records
+batch_*.json
+vision_batch_*.json
+handwriting_*.csv
+handwriting_review_raw.json
+extracted_finance.csv
+
+# ── Large Binary Model Files ───────────────────────────────────────────────────
+*.h5
+*.pth
+
+# ── Build / Runtime Artifacts ──────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+
+# Compiled binaries / executables (no extension, built outputs)
+sam
+segment
+running
+csv_clean
+clean_cells
+
+# Generated cell crops and digit segmentation outputs (client data derived)
+Cells_Cleaned/
+blank/
+separated_digits/
+
+# ── macOS ──────────────────────────────────────────────────────────────────────
+.DS_Store
