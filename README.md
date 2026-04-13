@@ -1,12 +1,12 @@
 # Converting Handwritten Payment Tables to CSV
 
-A record of the full journey to digitize 11 months of handwritten salon payment ledgers — including two failed approaches and the final working solution using Claude Vision.
+A record of the full journey to digitize 11 months of my mother's handwritten salon payment ledgers — including two failed approaches and the final working solution using Claude Vision.
 
 ---
 
 ## The Problem
 
-A threading salon tracked every client payment by hand in paper ledgers throughout 2025 (January – November). Each page was a table with columns for client name, cash, Venmo, and Zelle amounts. By year-end there were 56 scanned page-halves covering ~1,900+ individual payment records that needed to live in a finance management app.
+My mom's tracked every client payment by hand in paper ledgers throughout 2025 (January – November). Each page was a table with columns for client name, cash, Venmo, and Zelle amounts. By year-end there were 56 scanned page-halves covering ~1,900+ individual payment records that needed to live in a finance management app.
 
 The goal: read the handwritten tables, extract every row, and produce a clean CSV that the app could load.
 
